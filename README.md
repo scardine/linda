@@ -12,7 +12,7 @@ move to a small town. So far I'm doing great at oDesk.
 
 Linda Lo is a recruiter from oDesk (is she aware that her name means "pretty" in Portuguese?).
 
-As part of a recruitment proccess I received the following assignment:
+As part of a recruitment proccess I got the following assignment:
 
 > This should take you less than 20 minutes to reply.
 
