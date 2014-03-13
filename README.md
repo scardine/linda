@@ -116,7 +116,7 @@ And finally the assignment:
 
 Only the first names, orderded:
 
-    $ getfirstnames:driver=mysql,username=paulos,password=test,dbhost=db,port=3307,start=1234,end=1244
+    $ fab result:driver=mysql,username=paulos,password=test,dbhost=db,port=3307,start=1234,end=1244
 
     Connecting to mysql://paulos:test@db/test
     Courtney
