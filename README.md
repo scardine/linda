@@ -85,7 +85,7 @@ Get the list of arguments:
 
 I assume your users table has a field called `user_id`. If you don't have such a table yet, run the `setup` command in order to create the table and some fake users:
 
-    $ fab setup:driver=mysql,username=paulos,password=test,howmany=10
+    $ fab setup:driver=mysql,username=paulos,password=test,howmany=1500
     
     Created user 1: Aldin Sutija
     Created user 2: David Jaijeet
