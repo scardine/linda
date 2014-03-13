@@ -3,11 +3,12 @@ Linda
 
 Linda's assignment for oDesk interview.
 
-What?
------
+Raison d'etre
+-------------
 
 My name is Paulo Scardine and I live at Sao Paulo, Brazil. A few months ago I decided I don't
-want to have 10 million neighbours anymore, so I'm pursuing the "digital nomad" errand.
+want to have 10 million neighbours anymore, so I'm pursuing the "digital nomad" errand in order to
+move to a small town. So far I'm doing great at oDesk.
 
 Linda Lo is a recruiter from oDesk (is she aware that her name means "pretty" in Portuguese?).
 
@@ -17,7 +18,7 @@ As part of a recruitment proccess I received the following assignment:
 
 > 1. Please provide a code sample in Python showing a moderately complicated operation in the context of a consumer app.  It can be the RESTful interface, some data manipulation in response to user input, or processing and output based on the user’s data.  Whichever it is, please provide a sample of of a few hundred lines of code from one of your projects.
 
-This one is tough... Most of the code I write is covered by some NDA, is smaller than a few hundred lines or is obsolete by now. 
+This one is tough... Most of the code I write is covered by some NDA, is smaller than a few hundred lines or is obsolete by now.
 
 > 2. Write a small program that I could install on my AWS server that is a generator that gives the firstname of subscribers from a MySQL table, with user_id #s between 1234 and 1334, and that produces the name in English alphabetical order. The structure of the MySQL table can be anything you suggest.
 
