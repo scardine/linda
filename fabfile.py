@@ -100,7 +100,7 @@ def _get_firstnames_generator(users, start, end):
 def result(driver='mysql', username='root', password='',
             dbhost='localhost', port='3307', database='test', table='users',
             start=1234, end=1334):
-    """Get first name from a range based on user_id"""
+    """Get first name from a range based on user_id, ordered"""
 
     db = _connect(driver=driver, username=username, password=password,
                   dbhost=dbhost, port=port, database=database)
