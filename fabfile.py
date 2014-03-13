@@ -71,7 +71,8 @@ def drop(driver='mysql', username='root', password='', dbhost='localhost',
 def _get_user_range_generator(users, start, end):
     """Assignment requires a generator. Boring... :-)"""
     user_id = users.c['user_id']
-    for user in users.filter(user_id<=end).filter(user_id>=start).all():
+    for user in users.filter(user_id<=end).filter(user_id>=start)\
+        .order_by(users.first_name, users.last_name).all():
         yield user
 
 
