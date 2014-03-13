@@ -99,17 +99,18 @@ And finally the assignment:
     $ fab getrange:driver=mysql,username=paulos,password=test,start=1234,end=1244
     
     Connecting to mysql://paulos:test@db/test
-    1234    Ulises Kuo-Chuan
-    1235    Waverley Shing
-    1236    Hollis Haibo
     1237    Courtney Tijeun
-    1238    Stephan Merritt
-    1239    Ring Arno
-    1240    Peter Huichaun
-    1241    Roberto Moni
-    1242    Vincent Thersa
     1243    Dare Daesik
+    1236    Hollis Haibo
     1244    Jarret Ta
+    1240    Peter Huichaun
+    1239    Ring Arno
+    1241    Roberto Moni
+    1238    Stephan Merritt
+    1234    Ulises Kuo-Chuan
+    1242    Vincent Thersa
+    1235    Waverley Shing
+
 
     Done.
     
