@@ -10,7 +10,7 @@ import random
 
 def _connect(**kwargs):
     url = "{driver}://{username}:{password}@{dbhost}/{database}".format(**kwargs)
-    print("Connecting to {}".format(url))
+    sys.stderr.write("Connecting to {}\n".format(url))
     return sqlsoup.SQLSoup(url)
 
 
@@ -71,8 +71,7 @@ def drop(driver='mysql', username='root', password='', dbhost='localhost',
 def _get_user_range_generator(users, start, end):
     """Assignment requires a generator. Boring... :-)"""
     user_id = users.c['user_id']
-    for user in users.filter(user_id<=end).filter(user_id>=start)\
-        .order_by(users.first_name, users.last_name).all():
+    for user in users.filter(user_id<=end).filter(user_id>=start).all():
         yield user
 
 
@@ -88,6 +87,27 @@ def getrange(driver='mysql', username='root', password='', dbhost='localhost',
             user.first_name,
             user.last_name
         ))
+
+
+def _get_firstnames_generator(users, start, end):
+    """Assignment requires a generator. Boring... :-)"""
+    user_id = users.c['user_id']
+    for user in users.filter(user_id<=end).filter(user_id>=start)\
+        .order_by(users.first_name, users.last_name).all():
+        yield user.first_name
+
+
+def result(driver='mysql', username='root', password='',
+            dbhost='localhost', port='3307', database='test', table='users',
+            start=1234, end=1334):
+    """Get first name from a range based on user_id"""
+
+    db = _connect(driver=driver, username=username, password=password,
+                  dbhost=dbhost, port=port, database=database)
+    users = getattr(db, table)
+    for user in _get_firstnames_generator(users, start, end):
+        print(user)
+
 
 def arguments():
     """List arguments and defaults"""
