@@ -63,6 +63,7 @@ List commands:
     arguments  List arguments and defaults
     drop       Drop table
     getrange   Get a range of users based on user_id, default between 1234 and 1334
+    result     Get first name from a range based on user_id
     setup      Creates table if it does not exist, and create 2000 fake users.
 
 Get the list of arguments:
@@ -112,6 +113,8 @@ And finally the assignment:
     1244    Jarret Ta
 
     Done.
+
+Only the first names, orderded:
 
     $ getfirstnames:driver=mysql,username=paulos,password=test,dbhost=db,port=3307,start=1234,end=1244
 
