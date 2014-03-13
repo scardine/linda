@@ -1,7 +1,7 @@
 Linda
 =====
 
-Linda's assignment for oDesk interview.
+Linda's assignment for one of my oDesk interviews.
 
 Raison d'etre
 -------------
